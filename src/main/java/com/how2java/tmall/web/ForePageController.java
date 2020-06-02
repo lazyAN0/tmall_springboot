@@ -3,6 +3,7 @@ package com.how2java.tmall.web;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+
 import javax.servlet.http.HttpSession;
 
 @Controller
@@ -76,5 +77,4 @@ public class ForePageController {
         session.removeAttribute("user");
         return "redirect:home";
     }
-
 }
